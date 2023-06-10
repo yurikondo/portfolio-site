@@ -16,30 +16,6 @@
   border-bottom: 520px solid #fff;
 }
 
-/* .processor {
-  top: 450px;
-  right: 70px;
-} */
-
-.battery {
-  top: 100px;
-  left: 340px;
-  transform: rotate(-90deg);
-}
-
-.display {
-  bottom: 450px;
-  left: 50px;
-  transform: rotate(-180deg);
-}
-
-.camera {
-  bottom: 150px;
-  right: 370px;
-  transform: rotate(90deg);
-
-}
-
 .controle {
   right: 15%;
 }
