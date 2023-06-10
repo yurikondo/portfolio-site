@@ -1,9 +1,21 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Home({}) {
   const [circleRotation, setCircleRotation] = useState(0);
+
+  // setIntervalとclearIntervalはJavaScriptのタイマー関数
+  // 一定の間隔で実行したい処理や、一定時間後に実行を停止したい場合に便利な関数
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCircleRotation((prevRotation) => prevRotation + 90);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   const handleClickUp = () => {
     // prevRotationはsetState関数のコールバック関数内で前の状態を参照するための仮引数
