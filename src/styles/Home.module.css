@@ -1,1 +1,41 @@
+.circle {
+  width: 1000px;
+  height: 1000px;
+}
 
+.pc {
+  width: 400px;
+  left: 20%;
+  transform: translateY(-30%);
+}
+
+.overray {
+  border-top: 520px solid #fff;
+  border-right: 520px solid transparent;
+  border-left: 520px solid #fff;
+  border-bottom: 520px solid #fff;
+}
+
+.one {
+  top: 450px;
+  right: 70px;
+}
+
+.two {
+  top: 100px;
+  left: 340px;
+}
+
+.three {
+  bottom: 450px;
+  left: 50px;
+}
+
+.four {
+  bottom: 150px;
+  right: 370px;
+}
+
+.controle {
+  right: 15%;
+}
