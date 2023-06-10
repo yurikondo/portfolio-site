@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+}
+
+.feature img {
+  width: 70px;
+}
+
+.one {
+  top: 450px;
+  right: 70px;
+}
+
+.two {
+  top: 100px;
+  right: 340px;
+}
+
+.three {
+  bottom: 450px;
+  left: 50px;
+}
+
+.four {
+  bottom: 150px;
+  right: 370px;
+}
+
+.pc {
+  width: 400px;
+  left: 27%;
+  transform: translateY(-50%);
+}
+
+.controle {
+  right: 15%;
+  transform: translateY(-50%);
+}
+
+#downBtn {
+  transform: rotate(-180deg);
+}
