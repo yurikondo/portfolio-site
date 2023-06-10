@@ -16,24 +16,28 @@
   border-bottom: 520px solid #fff;
 }
 
-.one {
+/* .processor {
   top: 450px;
   right: 70px;
-}
+} */
 
-.two {
+.battery {
   top: 100px;
   left: 340px;
+  transform: rotate(-90deg);
 }
 
-.three {
+.display {
   bottom: 450px;
   left: 50px;
+  transform: rotate(-180deg);
 }
 
-.four {
+.camera {
   bottom: 150px;
   right: 370px;
+  transform: rotate(90deg);
+
 }
 
 .controle {

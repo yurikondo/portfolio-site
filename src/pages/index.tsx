@@ -5,6 +5,22 @@ import styles from "../styles/Home.module.css";
 export default function Home({}) {
   const [circleRotation, setCircleRotation] = useState(0);
 
+  const rotateItems = [
+    { id: "battery", style: { top: "450px", right: "70px" } },
+    {
+      id: "camera",
+      style: { top: "100px", left: "340px", transform: "rotate(-90deg)" },
+    },
+    {
+      id: "display",
+      style: { bottom: "450px", left: "50px", transform: "rotate(-180deg)" },
+    },
+    {
+      id: "processor",
+      style: { bottom: "150px", right: "370px", transform: "rotate(90deg)" },
+    },
+  ];
+
   // setIntervalとclearIntervalはJavaScriptのタイマー関数
   // 一定の間隔で実行したい処理や、一定時間後に実行を停止したい場合に便利な関数
   useEffect(() => {
@@ -42,47 +58,25 @@ export default function Home({}) {
           <div className={`w-0 h-0 ${styles.overray}`}></div>
           <img
             src="imgs/hero/pc.png"
-            className={`pc absolute top-2/4 z-10 w-16 ${styles.pc}`}
+            className={`absolute top-2/4 z-10 w-16 ${styles.pc}`}
           ></img>
           <div
             className={`absolute rounded-full top-0 left-0 transition duration-1000 ${styles.circle}`}
             style={{ transform: `rotate(${circleRotation}deg)` }}
           >
-            {/* top-1/3 right-1/4  */}
-            <div className={`feature text-white absolute flex ${styles.one}`}>
-              <img src="imgs/circle/processor.png" alt="画像" />
-              <div className="ml-5">
-                <h1 className="text-3xl">processor</h1>
-                <p className="mt-1">Beautiful processor</p>
+            {rotateItems.map((rotateItem) => (
+              <div
+                className={`feature text-white absolute flex`}
+                style={rotateItem.style}
+                key={rotateItem.id}
+              >
+                <img src={`imgs/circle/${rotateItem.id}.png`} alt="画像" />
+                <div className="ml-5">
+                  <h1 className="text-3xl">{rotateItem.id}</h1>
+                  <p className="mt-1">Beautiful processor</p>
+                </div>
               </div>
-            </div>
-            <div
-              className={`feature text-white absolute flex transform -rotate-90 ${styles.two}`}
-            >
-              <img src="imgs/circle/battery.png" alt="画像" />
-              <div className="ml-5">
-                <h1 className="text-3xl">battery</h1>
-                <p className="mt-1">Beautiful battery</p>
-              </div>
-            </div>
-            <div
-              className={`feature text-white absolute flex -rotate-180 ${styles.three}`}
-            >
-              <img src="imgs/circle/display.png" alt="画像" />
-              <div className="ml-5">
-                <h1 className="text-3xl">display</h1>
-                <p className="mt-1">Beautiful display</p>
-              </div>
-            </div>
-            <div
-              className={`feature text-white absolute flex rotate-90 ${styles.four}`}
-            >
-              <img src="imgs/circle/camera.png" alt="画像" />
-              <div className="ml-5">
-                <h1 className="text-3xl">Camera</h1>
-                <p className="mt-1">Beautiful camera</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div
