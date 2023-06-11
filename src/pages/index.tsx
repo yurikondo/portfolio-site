@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "@/components/hero/Hero";
 import Skills from "@/components/skill/Skills";
+import Typing from "@/components/typing/Typing";
 
 export default function Home({}) {
   return (
@@ -14,6 +15,7 @@ export default function Home({}) {
       </Head>
       <Hero/>
       <Skills/>
+      <Typing/>
     </div>
   );
 }

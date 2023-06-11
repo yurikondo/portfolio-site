@@ -6,7 +6,7 @@ export class Skills extends Component {
     return (
       <div
         id="skills"
-        className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full z-20"
+        className="commonLayout flex justify-between items-center"
       >
         <section className="w-full">
           <h2>スキルスタック</h2>

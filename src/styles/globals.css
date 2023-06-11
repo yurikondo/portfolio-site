@@ -5,3 +5,7 @@
 .feature img {
   width: 70px;
 }
+
+.commonLayout {
+  @apply container mt-64 mx-auto px-8 md:px-14 lg:px-24 w-full
+}
