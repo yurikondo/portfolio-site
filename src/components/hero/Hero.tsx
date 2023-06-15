@@ -3,6 +3,7 @@ import styles from "../../styles/Home.module.css";
 
 interface RotateItem {
   id: string;
+  subTitle: string;
   style?: React.CSSProperties;
 }
 
@@ -10,17 +11,24 @@ const Hero: React.FC = () => {
   const [circleRotation, setCircleRotation] = useState(0);
 
   const rotateItems: RotateItem[] = [
-    { id: "battery", style: { top: "450px", right: "70px" } },
     {
-      id: "camera",
+      id: "apple",
+      subTitle: "beautiful design",
+      style: { top: "450px", right: "70px" },
+    },
+    {
+      id: "desktop",
+      subTitle: "beautiful design",
       style: { top: "100px", left: "340px", transform: "rotate(-90deg)" },
     },
     {
-      id: "display",
+      id: "windows",
+      subTitle: "beautiful design",
       style: { bottom: "450px", left: "50px", transform: "rotate(-180deg)" },
     },
     {
-      id: "processor",
+      id: "iphone",
+      subTitle: "beautiful design",
       style: { bottom: "150px", right: "370px", transform: "rotate(90deg)" },
     },
   ];
@@ -37,9 +45,7 @@ const Hero: React.FC = () => {
 
   return (
     <main className="w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 relative">
-      <div
-        className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}
-      >
+      <div className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}>
         {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
         <img
@@ -60,7 +66,7 @@ const Hero: React.FC = () => {
               <img src={`imgs/circle/${rotateItem.id}.png`} alt="画像" />
               <div className="ml-5">
                 <h1 className="text-3xl">{rotateItem.id}</h1>
-                <p className="mt-1">Beautiful processor</p>
+                <p className="mt-1">{rotateItem.subTitle}</p>
               </div>
             </div>
           ))}
