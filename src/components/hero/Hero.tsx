@@ -35,17 +35,12 @@ const Hero: React.FC = () => {
     };
   }, []);
 
-  const handleClickUp = () => {
-    setCircleRotation((prevRotation) => prevRotation - 90);
-  };
-
-  const handleClickDown = () => {
-    setCircleRotation((prevRotation) => prevRotation + 90);
-  };
-
   return (
     <main className="w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 relative">
-      <div className="w-screen h-screen absolute -ml-20">
+      <div
+        className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}
+      >
+        {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
         <img
           src="imgs/hero/pc.png"
@@ -70,23 +65,6 @@ const Hero: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div
-        className={`absolute top-2/4 flex justify-center items-center flex-col transform -translate-y-1/2  ${styles.controle}`}
-      >
-        <img
-          src="imgs/hero/arrow.png"
-          alt="上矢印"
-          className="cursor-pointer w-4"
-          onClick={handleClickUp}
-        />
-        <h3 className="text-white my-3">Feature</h3>
-        <img
-          src="imgs/hero/arrow.png"
-          alt="下矢印"
-          className="cursor-pointer w-4 transform -rotate-180"
-          onClick={handleClickDown}
-        />
       </div>
     </main>
   );

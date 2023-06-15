@@ -23,3 +23,32 @@
 .badge {
   @apply px-4 py-2 text-sm bg-badge;
 }
+
+/* @media (min-width: 1536px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1024px) {
+}
+ */
+@media (max-width: 1024px) {
+  .circleWrap{
+    margin-left: 0px;
+  }
+  .circle {
+    display: none;
+  }
+  .overray {
+    border:none;
+  }
+  .pc{display: none;}
+}
+
+/* @media (min-width: 768px) {
+
+}
+
+@media (min-width: 640px) {
+} */

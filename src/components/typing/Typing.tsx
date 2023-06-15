@@ -5,7 +5,7 @@ export class Typing extends Component {
   // https://www.npmjs.com/package/typed.js/v/2.0.12
   componentDidMount() {
     const options = {
-      strings: ["<i>イタリック文字</i> 一つ目の文字.", "&amp; 二つ目の文字"],
+      strings: ["イタリック文字 一つ目の文字.", "二つ目の文字"],
       loop: true,
       typeSpeed: 140,
       backSpeed: 100,
