@@ -16,9 +16,10 @@ export default function Home({}) {
         <script
           src="https://kit.fontawesome.com/a58fb0841a.js"
           crossOrigin="anonymous"
-        ></script>
+          async
+        />
       </Head>
-      <Navbar/>
+      <Navbar />
       <Hero />
       <PortFolio />
       <Skills />

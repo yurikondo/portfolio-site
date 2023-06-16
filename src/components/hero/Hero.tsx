@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
+import Image from "next/image";
 
 interface RotateItem {
   id: string;
@@ -48,7 +49,7 @@ const Hero: React.FC = () => {
       <div className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}>
         {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
-        <img
+        <Image
           src="imgs/hero/pc.png"
           className={`absolute top-2/4 z-10 w-16 ${styles.pc}`}
           alt="PC"

@@ -9,7 +9,7 @@ export class Skills extends Component {
         className="commonLayout flex justify-between items-center"
       >
         <section className="w-full">
-          <h2>スキルスタック</h2>
+          <h2 className="secondary-title">スキルスタック</h2>
           <p>私は以下のプログラミング言語を取り扱ってきました</p>
 
           <div className="my-16 ">
