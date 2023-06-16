@@ -3,6 +3,7 @@ import Hero from "@/components/hero/Hero";
 import Skills from "@/components/skill/Skills";
 import Typing from "@/components/typing/Typing";
 import PortFolio from "@/components/PortFolio";
+import Navbar from "@/components/Navbar";
 
 export default function Home({}) {
   return (
@@ -17,6 +18,7 @@ export default function Home({}) {
           crossOrigin="anonymous"
         ></script>
       </Head>
+      <Navbar/>
       <Hero />
       <PortFolio />
       <Skills />

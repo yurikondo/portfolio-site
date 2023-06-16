@@ -21,7 +21,7 @@
 }
 
 .badge {
-  @apply px-4 py-2 text-sm bg-badge;
+  @apply px-4 py-2 text-sm bg-badge text-white;
 }
 
 /* @media (min-width: 1536px) {
