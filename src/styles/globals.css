@@ -7,5 +7,18 @@
 }
 
 .commonLayout {
-  @apply container mt-64 mx-auto px-8 md:px-14 lg:px-24 w-full
+  @apply container mt-40 mx-auto px-8 md:px-14 lg:px-24 w-full;
+}
+
+.secondary-title {
+  @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+  content: "";
+  @apply block w-12 h-2 bg-blue-500 rounded-full mb-1;
+}
+
+.hover-text {
+  @apply hover:text-selectedText transition-all duration-300 cursor-pointer;
 }

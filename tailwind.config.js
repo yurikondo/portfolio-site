@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         badge: "#3f3f51",
+        selectedText: "#3A82F6",
       },
     },
   },
