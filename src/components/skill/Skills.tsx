@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../../styles/Home.module.css";
+import SectionTitle from "../SectionTitle";
 
 export class Skills extends Component {
   render() {
@@ -9,9 +10,7 @@ export class Skills extends Component {
         className="commonLayout flex justify-between items-center"
       >
         <section className="w-full">
-          <h2 className="secondary-title">スキルスタック</h2>
-          <p>私は以下のプログラミング言語を取り扱ってきました</p>
-
+          <SectionTitle />
           <div className="my-16 ">
             <div className="w-full border border-gray-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer">
               <div className="mb-6 lg:mb-0 self-center">
