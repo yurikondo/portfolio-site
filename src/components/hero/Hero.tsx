@@ -62,12 +62,12 @@ const Hero: React.FC = () => {
         >
           {rotateItems.map((rotateItem) => (
             <div
-              className={`feature text-white absolute flex`}
+              className={`feature text-white absolute flex align-middle`}
               style={rotateItem.style}
               key={rotateItem.id}
             >
-              <img src={`imgs/circle/${rotateItem.id}.png`} alt="画像" />
-              <div className="ml-5">
+              <img src={`imgs/circle/${rotateItem.id}.png`} alt="画像" className="w-24"/>
+              <div className="ml-5 flex flex-col align-middle h-auto mt-4 ">
                 <h1 className="text-3xl">{rotateItem.id}</h1>
                 <p className="mt-1">{rotateItem.subTitle}</p>
               </div>
