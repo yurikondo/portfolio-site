@@ -1,10 +1,16 @@
 import React from "react";
 
-const SectionTitle = () => {
+type Props = {
+  title: string;
+  desc: string;
+};
+
+const SectionTitle = (props: Props) => {
+  const { title, desc } = props;
   return (
     <div>
-      <h2 className="secondary-title">スキルスタック</h2>
-      <p>私は以下のプログラミング言語を取り扱ってきました</p>
+      <h2 className="secondary-title">{title}</h2>
+      <p>{desc}</p>
     </div>
   );
 };
