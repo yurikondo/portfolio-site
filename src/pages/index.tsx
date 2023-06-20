@@ -24,6 +24,12 @@ export default function Home({}) {
       <PortFolio />
       <Skills />
       <Typing />
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+        integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
+      ></script>
     </div>
   );
 }
