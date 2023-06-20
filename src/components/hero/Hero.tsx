@@ -50,9 +50,11 @@ const Hero: React.FC = () => {
         {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
         <Image
-          src="imgs/hero/pc.png"
+          src="/imgs/hero/pc.png"
           className={`absolute top-2/4 z-10 w-16 ${styles.pc}`}
           alt="PC"
+          width={100}
+          height={100}
         />
         <div
           className={`absolute rounded-full top-0 left-0 transition duration-1000 ${styles.circle}`}
