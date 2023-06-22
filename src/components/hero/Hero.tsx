@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
+import Card from "../Card";
 
 interface RotateItem {
   id: string;
@@ -49,15 +50,9 @@ const Hero: React.FC = () => {
       <div className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}>
         {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
-        <Image
-          src="/imgs/hero/pc.png"
-          className={`absolute top-2/4 z-10 w-16 ${styles.pc}`}
-          alt="PC"
-          width={100}
-          height={100}
-        />
+        <Card />
         <div
-          className={`absolute rounded-full top-0 left-0 transition duration-1000 ${styles.circle}`}
+          className={`absolute rounded-full top-0 left-20 transition duration-1000 ${styles.circle}`}
           style={{ transform: `rotate(${circleRotation}deg)` }}
         >
           {rotateItems.map((rotateItem) => (
@@ -66,7 +61,11 @@ const Hero: React.FC = () => {
               style={rotateItem.style}
               key={rotateItem.id}
             >
-              <img src={`imgs/circle/${rotateItem.id}.png`} alt="画像" className="w-24"/>
+              <img
+                src={`imgs/circle/${rotateItem.id}.png`}
+                alt="画像"
+                className="w-24"
+              />
               <div className="ml-5 flex flex-col align-middle h-auto mt-4 ">
                 <h1 className="text-3xl">{rotateItem.id}</h1>
                 <p className="mt-1">{rotateItem.subTitle}</p>

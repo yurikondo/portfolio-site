@@ -3,10 +3,9 @@
   height: 1000px;
 }
 
-.pc {
-  width: 400px;
-  left: 20%;
-  transform: translateY(-30%);
+.phone {
+  left: 25%;
+  transform: translateY(-10%);
 }
 
 .overray {

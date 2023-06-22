@@ -4,7 +4,7 @@ import Card from "./Card";
 const PortFolio = () => {
   return (
     <div className="absolute">
-      <Card />
+    ポートフォリオ
     </div>
   );
 };
