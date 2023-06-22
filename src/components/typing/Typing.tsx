@@ -5,7 +5,7 @@ export class Typing extends Component {
   // https://www.npmjs.com/package/typed.js/v/2.0.12
   componentDidMount() {
     const options = {
-      strings: ["イタリック文字 一つ目の文字.", "二つ目の文字"],
+      strings: ["アプリを作成.", "サイトを開設"],
       loop: true,
       typeSpeed: 140,
       backSpeed: 100,
@@ -18,17 +18,11 @@ export class Typing extends Component {
     return (
       <div className="commonLayout">
         <h1 className="text-7xl">
-          音にこだわる<span className="auto-input"></span>
+          ポートフォリオ<span className="auto-input"></span>
         </h1>
-        <p>
-          丹念に、そして精密に、打鍵音を意識して作られた
-          <br />
-          キーボードやマウスを販売する数少ないタイピング専門店です。
+        <p className="mt-8 text-lg">
+          このタイピングしているような表現は、typed.jsというライブラリを使いました。
         </p>
-        <a href="">お問い合わせ</a>
-        <a href="" className="online-button">
-          オンライン相談
-        </a>
       </div>
     );
   }
