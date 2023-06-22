@@ -24,6 +24,14 @@ const skills: any = [
     tags: ["Express", "Api開発"],
     desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
   },
+  {
+    id: "Figma",
+    icon: "fa-figma",
+    color: "lime-400",
+    tags: ["アプリデザイン", "バナー作成"],
+    desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
+  },
+
 ];
 
 export class Skills extends Component {
