@@ -4,6 +4,7 @@ import Skills from "@/components/skill/Skills";
 import Typing from "@/components/typing/Typing";
 import PortFolio from "@/components/PortFolio";
 import Navbar from "@/components/Navbar";
+import Banners from "@/components/typing/Banners";
 
 export default function Home({}) {
   return (
@@ -23,6 +24,7 @@ export default function Home({}) {
       <Hero />
       <PortFolio />
       <Skills />
+      <Banners/>
       <Typing />
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
