@@ -23,6 +23,10 @@
   @apply px-4 py-2 text-sm bg-badge text-white;
 }
 
+.figmaSection iframe{
+  height: 700px;
+}
+
 /* @media (min-width: 1536px) {
 }
 
@@ -33,16 +37,18 @@
 }
  */
 @media (max-width: 1024px) {
-  .circleWrap{
+  .circleWrap {
     margin-left: 0px;
   }
   .circle {
     display: none;
   }
   .overray {
-    border:none;
+    border: none;
   }
-  .pc{display: none;}
+  .pc {
+    display: none;
+  }
 }
 
 /* @media (min-width: 768px) {
