@@ -4,6 +4,7 @@ import Card from "../Card";
 
 interface RotateItem {
   id: string;
+  icon: string;
   subTitle: string;
   style?: React.CSSProperties;
 }
@@ -14,21 +15,25 @@ const Hero: React.FC = () => {
   const rotateItems: RotateItem[] = [
     {
       id: "apple",
+      icon: "fa-brands fa-apple",
       subTitle: "beautiful design",
       style: { top: "450px", right: "70px" },
     },
     {
-      id: "desktop",
+      id: "laptop",
+      icon: "fa-solid fa-laptop-code",
       subTitle: "beautiful design",
       style: { top: "100px", left: "340px", transform: "rotate(-90deg)" },
     },
     {
       id: "windows",
+      icon: "fa-brands fa-windows",
       subTitle: "beautiful design",
       style: { bottom: "450px", left: "50px", transform: "rotate(-180deg)" },
     },
     {
-      id: "iphone",
+      id: "iPhone",
+      icon: "fa-solid fa-mobile-screen-button",
       subTitle: "beautiful design",
       style: { bottom: "150px", right: "370px", transform: "rotate(90deg)" },
     },
@@ -60,11 +65,9 @@ const Hero: React.FC = () => {
               style={rotateItem.style}
               key={rotateItem.id}
             >
-              <img
-                src={`imgs/circle/${rotateItem.id}.png`}
-                alt="画像"
-                className="w-24"
-              />
+              <div className="mb-6 lg:mb-0 self-center mr-3">
+                <i className={`${rotateItem.icon} text-8xl text-white`}></i>
+              </div>
               <div className="ml-5 flex flex-col align-middle h-auto mt-4 ">
                 <h1 className="text-3xl">{rotateItem.id}</h1>
                 <p className="mt-1">{rotateItem.subTitle}</p>
