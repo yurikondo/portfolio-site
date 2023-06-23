@@ -29,9 +29,8 @@ const skills: any = [
     icon: "fa-figma",
     color: "lime-400",
     tags: ["アプリデザイン", "バナー作成"],
-    desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
+    desc: "プログラミングを本格的に勉強し始める前は、Figmaでアプリのデザインなどしていました。UI/UXも興味あります。",
   },
-
 ];
 
 export class Skills extends Component {
@@ -43,13 +42,14 @@ export class Skills extends Component {
       >
         <section className="w-full">
           <SectionTitle
+            id="skills"
             title="スキルスタック"
             desc="私は以下のプログラミング言語を取り扱ってきました"
           />
           {skills.map((skill: any) => (
             <div className="my-16 " key={skill.id}>
               <div
-                className={`w-full border border-gray-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-${skill.color} transition-all duration-300 cursor-pointer`}
+                className={`w-full border border-gray-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start max-sm:flex-col lg:space-x-32 hover:border-${skill.color} transition-all duration-300 cursor-pointer`}
               >
                 <div className="mb-6 lg:mb-0 self-center">
                   <i
