@@ -16,7 +16,7 @@ const skills: any = [
     icon: "fa-react",
     color: "text-sky-400",
     borderColor: "border-yellow-300",
-    tags: ["Next.js", "Redux", "フロントエンド制作"],
+    tags: ["Next.js", "Redux", "MaterialUI"],
     desc: "このポートフォリオサイトは、ReactのフレームワークのNext.jsを使って作成しました。",
   },
   {
@@ -24,7 +24,7 @@ const skills: any = [
     icon: "fa-node",
     color: "text-green-700",
     borderColor: "border-green-700",
-    tags: ["Express", "MongoDB", "Api開発", "tailwindcss"],
+    tags: ["Express", "MongoDB", "tailwindcss"],
     desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
   },
   {
