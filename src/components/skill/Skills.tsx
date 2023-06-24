@@ -47,7 +47,7 @@ export class Skills extends Component {
             desc="私は以下のプログラミング言語を取り扱ってきました"
           />
           {skills.map((skill: any) => (
-            <div className="my-16 " key={skill.id}>
+            <div className="mb-16 " key={skill.id}>
               <div
                 className={`w-full border border-gray-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start max-sm:flex-col lg:space-x-32 hover:border-${skill.color} transition-all duration-300 cursor-pointer`}
               >

@@ -4,11 +4,17 @@ import Swiper, { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import SectionTitle from "../SectionTitle";
 // import {swiper} from "../../utils/swiper";
 
 const Banners = () => {
   return (
-    <div>
+    <div className="commonLayout">
+      <SectionTitle
+        id="banners"
+        title="バナーデザイン"
+        desc="Figmaで作成したバナーです。バナーデザインの本を参考に作成しました。"
+      />
       {/* <!-- Slider main container --> */}
       <div className={`swiper w-80 h-80`}>
         {/* <!-- Additional required wrapper --> */}
@@ -28,7 +34,7 @@ const Banners = () => {
 
         {/* <!-- If we need scrollbar --> */}
         <div className="swiper-scrollbar"></div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const PortFolio = () => {
   return (
-    <div className="absolute">
+    <div className="commonLayout ">
     ポートフォリオ
     </div>
   );

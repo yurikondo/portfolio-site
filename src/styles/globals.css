@@ -8,7 +8,7 @@ body {
 }
 
 .commonLayout {
-  @apply container mt-40 mx-auto px-8 md:px-14 lg:px-24 w-full;
+  @apply container mt-24 mx-auto px-8 md:px-14 lg:px-24 w-full;
 }
 
 .secondary-title {
