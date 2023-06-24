@@ -24,7 +24,7 @@ export default function Home({}) {
       </Head>
       <Navbar />
       <Hero />
-      <PortFolio />
+      {/* <PortFolio /> */}
       <Skills />
       <Banners />
       <Figma />

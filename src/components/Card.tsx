@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 const Card = () => {
   return (
     <div
-      className={`border-solid border-2 border-sky-500 rounded-xl shadow-lg w-80 h-96 bg-black absolute top-40 z-10 ${styles.phone}`}
+      className={`rounded-xl shadow-lg  absolute z-10 ${styles.phone}`}
       data-tilt
       // data-tilt-glare="true"
       // data-tilt-max="1"
@@ -14,8 +14,8 @@ const Card = () => {
       <Image
         alt="スマホの画像"
         src="/imgs/hero/screenshot.png"
-        width={300}
-        height={150}
+        width={250}
+        height={130}
       />
     </div>
   );

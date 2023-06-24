@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <main className="-mt-6 w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 relative">
+    <main className="-mt-40 w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 relative">
       <div className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}>
         {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
