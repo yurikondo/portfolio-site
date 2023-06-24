@@ -6,28 +6,32 @@ const skills: any = [
   {
     id: "Javascript",
     icon: "fa-square-js",
-    color: "yellow-300",
+    color: "text-yellow-300",
+    borderColor: "border-yellow-300",
     tags: ["Typescript", "ウェブ制作", "バックエンド"],
     desc: "1番好きな言語はJavascriptです。",
   },
   {
     id: "React",
     icon: "fa-react",
-    color: "sky-400",
+    color: "text-sky-400",
+    borderColor: "border-yellow-300",
     tags: ["Next.js", "Redux", "フロントエンド制作"],
     desc: "このポートフォリオサイトは、ReactのフレームワークのNext.jsを使って作成しました。",
   },
   {
     id: "Node.js",
     icon: "fa-node",
-    color: "lime-400",
+    color: "text-green-700",
+    borderColor: "border-green-700",
     tags: ["Express", "MongoDB", "Api開発", "tailwindcss"],
     desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
   },
   {
     id: "Figma",
     icon: "fa-figma",
-    color: "lime-400",
+    color: "text-red-600",
+    borderColor: "border-red-600",
     tags: ["アプリデザイン", "バナー作成", "モックアップ"],
     desc: "プログラミングを本格的に勉強し始める前は、Figmaでアプリのデザインなどしていました。UI/UXも興味あります。",
   },
@@ -49,11 +53,11 @@ export class Skills extends Component {
           {skills.map((skill: any) => (
             <div className="mb-16 " key={skill.id}>
               <div
-                className={`w-full border border-gray-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start max-sm:flex-col lg:space-x-32 hover:border-${skill.color} transition-all duration-300 cursor-pointer`}
+                className={`w-full border border-gray-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start max-sm:flex-col lg:space-x-32 hover:${skill.borderColor} transition-all duration-300 cursor-pointer`}
               >
                 <div className="mb-6 lg:mb-0 self-center">
                   <i
-                    className={`fa-brands ${skill.icon} text-9xl text-${skill.color}`}
+                    className={`fa-brands ${skill.icon} text-9xl ${skill.color}`}
                   ></i>
                 </div>
 
