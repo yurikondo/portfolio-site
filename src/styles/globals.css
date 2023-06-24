@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .commonLayout {
   @apply container mt-40 mx-auto px-8 md:px-14 lg:px-24 w-full;
 }

@@ -60,8 +60,9 @@ export class Skills extends Component {
                 <div className="text-center flex flex-wrap justify-center lg:text-left lg:block">
                   <h3 className="text-3xl font-semibold">{skill.id}</h3>
                   <div className="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
-                    <div className={styles.badge}>ウェブ制作</div>
-                    <div className={styles.badge}>フロントエンド制作</div>
+                    {skill.tags.map((tag:string) => (
+                      <div className={styles.badge}>{tag}</div>
+                    ))}
                   </div>
                   <p>{skill.desc}</p>
                 </div>

@@ -9,11 +9,11 @@ const Navbar: React.FC = () => {
           <a href="#" className="hover-text">
             ホーム
           </a>
-          <a href="#" className="hover-text">
-            スキル
+          <a href="#skills" className="hover-text">
+            スキル一覧
           </a>
-          <a href="#" className="hover-text">
-            メッセージ
+          <a href="#figma" className="hover-text">
+            アプリデザイン
           </a>
         </div>
       </div>

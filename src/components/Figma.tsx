@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 const Figma = () => {
   return (
     <div
+      id="figma"
       className={`${styles.figmaSection} commonLayout flex max-xl:flex-col h-auto`}
     >
       <iframe
