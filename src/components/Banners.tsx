@@ -16,7 +16,7 @@ const bannerIds2: string[] = ["aws", "aws2"];
 
 const Banners = () => {
   return (
-    <section className="commonLayout">
+    <section id="banners" className="commonLayout">
       <SectionTitle
         id="banners"
         title="バナーデザイン"
