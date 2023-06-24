@@ -7,28 +7,28 @@ const skills: any = [
     id: "Javascript",
     icon: "fa-square-js",
     color: "yellow-300",
-    tags: ["ウェブ制作", "バックエンド"],
+    tags: ["Typescript", "ウェブ制作", "バックエンド"],
     desc: "1番好きな言語はJavascriptです。",
   },
   {
     id: "React",
     icon: "fa-react",
     color: "sky-400",
-    tags: ["Next.js", "フロントエンド制作"],
+    tags: ["Next.js", "Redux", "フロントエンド制作"],
     desc: "このポートフォリオサイトは、ReactのフレームワークのNext.jsを使って作成しました。",
   },
   {
     id: "Node.js",
     icon: "fa-node",
     color: "lime-400",
-    tags: ["Express", "Api開発"],
+    tags: ["Express", "MongoDB", "Api開発"],
     desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
   },
   {
     id: "Figma",
     icon: "fa-figma",
     color: "lime-400",
-    tags: ["アプリデザイン", "バナー作成"],
+    tags: ["アプリデザイン", "バナー作成", "モックアップ"],
     desc: "プログラミングを本格的に勉強し始める前は、Figmaでアプリのデザインなどしていました。UI/UXも興味あります。",
   },
 ];
@@ -60,7 +60,7 @@ export class Skills extends Component {
                 <div className="text-center flex flex-wrap justify-center lg:text-left lg:block">
                   <h3 className="text-3xl font-semibold">{skill.id}</h3>
                   <div className="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
-                    {skill.tags.map((tag:string) => (
+                    {skill.tags.map((tag: string) => (
                       <div className={styles.badge}>{tag}</div>
                     ))}
                   </div>
