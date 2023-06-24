@@ -61,7 +61,9 @@ export class Skills extends Component {
                   <h3 className="text-3xl font-semibold">{skill.id}</h3>
                   <div className="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
                     {skill.tags.map((tag: string) => (
-                      <div className={styles.badge}>{tag}</div>
+                      <div key={tag} className={styles.badge}>
+                        {tag}
+                      </div>
                     ))}
                   </div>
                   <p>{skill.desc}</p>

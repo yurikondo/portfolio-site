@@ -6,6 +6,7 @@ import PortFolio from "@/components/PortFolio";
 import Navbar from "@/components/Navbar";
 import Banners from "@/components/typing/Banners";
 import Figma from "@/components/Figma";
+import Script from 'next/script'
 
 export default function Home({}) {
   return (
@@ -28,12 +29,12 @@ export default function Home({}) {
       <Figma />
       <Banners />
       <Typing />
-      <script
+      <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
         integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
-      ></script>
+      ></Script>
     </div>
   );
 }

@@ -4,12 +4,13 @@ import Swiper, { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+// import {swiper} from "../../utils/swiper";
 
 const Banners = () => {
   return (
     <div>
       {/* <!-- Slider main container --> */}
-      <div className="swiper w-80 h-80">
+      <div className={`swiper w-80 h-80`}>
         {/* <!-- Additional required wrapper --> */}
         <div className="swiper-wrapper">
           {/* <!-- Slides --> */}
