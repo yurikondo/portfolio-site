@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Hero from "@/components/hero/Hero";
 import Skills from "@/components/skill/Skills";
-import Typing from "@/components/typing/Typing";
+import Typing from "@/components/Typing";
 import PortFolio from "@/components/PortFolio";
 import Navbar from "@/components/Navbar";
 import Banners from "@/components/typing/Banners";
@@ -26,8 +26,8 @@ export default function Home({}) {
       <Hero />
       <PortFolio />
       <Skills />
-      <Figma />
       <Banners />
+      <Figma />
       <Typing />
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"

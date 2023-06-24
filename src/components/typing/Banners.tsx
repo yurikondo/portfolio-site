@@ -1,41 +1,54 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from "swiper";
-// import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import SectionTitle from "../SectionTitle";
-// import {swiper} from "../../utils/swiper";
+import Image from "next/image";
+
+const bannerIds1: string[] = [
+  "fireworks",
+  "house",
+  "pc",
+  "coffee",
+  "net",
+  "cleaner",
+  "babypillow",
+  "lady",
+  "coin",
+];
+const bannerIds2: string[] = ["aws", "aws2"];
 
 const Banners = () => {
   return (
-    <div className="commonLayout">
+    <section className="commonLayout">
       <SectionTitle
         id="banners"
         title="バナーデザイン"
-        desc="Figmaで作成したバナーです。バナーデザインの本を参考に作成しました。"
+        desc="FigmaやPhotoshopで作成したバナーです。バナーデザインの本を参考に作成しました。"
       />
-      {/* <!-- Slider main container --> */}
-      <div className={`swiper w-80 h-80`}>
-        {/* <!-- Additional required wrapper --> */}
-        <div className="swiper-wrapper">
-          {/* <!-- Slides --> */}
-          <div className="swiper-slide">Slide 1</div>
-          <div className="swiper-slide">Slide 2</div>
-          <div className="swiper-slide">Slide 3</div>
-          ...
+      <div className="w-full ax-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3">
+          {bannerIds1.map((item) => (
+            <div key={item} className="flex justify-center mb-3">
+              <Image
+                alt="バナー画像"
+                src={`/imgs/banners/${item}.jpg`}
+                width={280}
+                height={150}
+              />
+            </div>
+          ))}
         </div>
-        {/* <!-- If we need pagination --> */}
-        <div className="swiper-pagination"></div>
-
-        {/* <!-- If we need navigation buttons --> */}
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
-
-        {/* <!-- If we need scrollbar --> */}
-        <div className="swiper-scrollbar"></div>
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3">
+          {bannerIds2.map((item) => (
+            <div key={item} className="flex justify-center mb-3">
+              <Image
+                alt="バナー画像"
+                src={`/imgs/banners/${item}.jpg`}
+                width={400}
+                height={150}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
