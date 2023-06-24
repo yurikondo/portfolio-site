@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "../../styles/Home.module.css";
-import Card from "../Card";
+import styles from "../styles/Home.module.css";
+import Card from "./Card";
 
 interface RotateItem {
   id: string;

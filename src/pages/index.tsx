@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Hero from "@/components/hero/Hero";
-import Skills from "@/components/skill/Skills";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
 import Typing from "@/components/Typing";
 import PortFolio from "@/components/PortFolio";
 import Navbar from "@/components/Navbar";
-import Banners from "@/components/typing/Banners";
+import Banners from "@/components/Banners";
 import Figma from "@/components/Figma";
-import Script from 'next/script'
+import Script from "next/script";
 
 export default function Home({}) {
   return (

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import styles from "../../styles/Home.module.css";
-import SectionTitle from "../SectionTitle";
+import styles from "../styles/Home.module.css";
+import SectionTitle from "./SectionTitle";
 
 const skills: any = [
   {
@@ -21,7 +21,7 @@ const skills: any = [
     id: "Node.js",
     icon: "fa-node",
     color: "lime-400",
-    tags: ["Express", "MongoDB", "Api開発"],
+    tags: ["Express", "MongoDB", "Api開発", "tailwindcss"],
     desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
   },
   {

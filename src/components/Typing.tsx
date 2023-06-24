@@ -26,6 +26,12 @@ export class Typing extends Component {
         <div className="w-full mt-8 grid grid-cols-12">
           <p className="text-lg col-span-7">
             このタイピングしているような表現は、typed.jsというライブラリを使いました。
+            <br/>
+            最後まで見ていただきありがとうございます。
+            <br/>
+            私はプログラミングだけでなく、UI/UX・アプリのデザインなども
+            <br/>
+            興味があります。
           </p>
           <Image
             alt="くまの画像"
