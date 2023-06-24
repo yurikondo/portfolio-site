@@ -14,19 +14,19 @@ const Hero: React.FC = () => {
 
   const rotateItems: RotateItem[] = [
     {
-      id: "apple",
+      id: "Apple",
       icon: "fa-brands fa-apple",
       subTitle: "beautiful design",
       style: { top: "450px", right: "70px" },
     },
     {
-      id: "laptop",
+      id: "Laptop",
       icon: "fa-solid fa-laptop-code",
-      subTitle: "beautiful design",
+      subTitle: "useful design",
       style: { top: "100px", left: "340px", transform: "rotate(-90deg)" },
     },
     {
-      id: "windows",
+      id: "Windows",
       icon: "fa-brands fa-windows",
       subTitle: "beautiful design",
       style: { bottom: "450px", left: "50px", transform: "rotate(-180deg)" },
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
     {
       id: "iPhone",
       icon: "fa-solid fa-mobile-screen-button",
-      subTitle: "beautiful design",
+      subTitle: "simple design",
       style: { bottom: "150px", right: "370px", transform: "rotate(90deg)" },
     },
   ];
@@ -52,7 +52,6 @@ const Hero: React.FC = () => {
   return (
     <main className="-mt-40 w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 relative">
       <div className={`w-screen h-screen absolute -ml-20 ${styles.circleWrap}`}>
-        {/* lg:-ml-36 */}
         <div className={`w-0 h-0 ${styles.overray}`}></div>
         <Card />
         <div
@@ -70,7 +69,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="ml-5 flex flex-col align-middle h-auto mt-4 ">
                 <h1 className="text-3xl">{rotateItem.id}</h1>
-                <p className="mt-1">{rotateItem.subTitle}</p>
+                <p className="mt-1 text-lg">{rotateItem.subTitle}</p>
               </div>
             </div>
           ))}
