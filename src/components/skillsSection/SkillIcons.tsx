@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Skillicons.module.scss";
 
 const icons: string[] = [
@@ -18,8 +19,8 @@ const SkillIcons = () => {
     <div className={styles.slider}>
       <div className={styles.slideTrack}>
         {icons.map((icon, index) => (
-          <div className={styles.slide}>
-            <img
+          <div className={styles.slide} key={index}>
+            <Image
               key={index}
               src={`/imgs/icons/${icon}.svg`}
               height="80"
