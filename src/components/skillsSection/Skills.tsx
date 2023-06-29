@@ -9,7 +9,7 @@ const skills: any = [
     icon: "fa-square-js",
     color: "text-yellow-300",
     borderColor: "border-yellow-300",
-    tags: ["Typescript", "Sass", "バックエンド"],
+    tags: ["Typescript", "Sass", "MaterialUI"],
     desc: "1番好きな言語はJavascriptです。",
   },
   {
@@ -17,15 +17,15 @@ const skills: any = [
     icon: "fa-react",
     color: "text-sky-400",
     borderColor: "border-yellow-300",
-    tags: ["Next.js", "Redux", "MaterialUI"],
-    desc: "このポートフォリオサイトは、ReactのフレームワークのNext.jsを使って作成しました。",
+    tags: ["Next.js", "Redux", "tailwindcss"],
+    desc: "このポートフォリオサイトは、Next.js・tailwindcssなどを使って作成しました。",
   },
   {
     id: "Node.js",
     icon: "fa-node",
     color: "text-green-700",
     borderColor: "border-green-700",
-    tags: ["Express", "MongoDB", "tailwindcss"],
+    tags: ["Express", "MongoDB", "バックエンド"],
     desc: "ポートフォリオアプリのバックエンドは、Node.jsのフレームワークのExpressを使って作成しました。",
   },
   {

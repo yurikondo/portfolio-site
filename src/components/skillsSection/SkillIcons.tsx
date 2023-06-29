@@ -3,11 +3,13 @@ import styles from "./Skillicons.module.scss";
 const icons: string[] = [
   "figma",
   "nodejs",
+  "nextjs",
   "react",
   "redux",
   "typescript",
   "javascript",
   "tailwindcss",
+  "html",
   "sass",
 ];
 
