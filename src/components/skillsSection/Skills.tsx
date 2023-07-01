@@ -41,7 +41,7 @@ const skills: any = [
 export class Skills extends Component {
   render() {
     return (
-      <section id="skills" className="commonLayout">
+      <section id="skills" className="commonLayout mt-60">
         <div className="w-full flex justify-between items-center">
           <div>
             <SectionTitle

@@ -9,7 +9,7 @@ type Props = {
 const SectionTitle = (props: Props) => {
   const { id, title, desc } = props;
   return (
-    <div className="mb-10">
+    <div className="mb-10 mt-10">
       <h2 className="secondary-title">{title}</h2>
       <p>{desc}</p>
     </div>
