@@ -4,6 +4,8 @@
 私の作成物を一つのページで共有できるようにしたいと思い、サイトを作りました。また試したかったライブラリなどもあったため、勉強のためにそれらも組み込みました。
 https://portfolio-site-lac-three.vercel.app/
 
+![サイト画像](https://i.gyazo.com/3332b967ed3d0bb656f7a77c270606c0.png)
+
 ## 使用技術
 
 - Next.js : 13.4.4
