@@ -13,7 +13,7 @@ const Card = () => {
     >
       <Image
         alt="スマホの画像"
-        src="/imgs/hero/screenshot.png"
+        src="/imgs/hero/phoneImg.png"
         width={250}
         height={130}
       />
