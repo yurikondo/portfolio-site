@@ -10,8 +10,6 @@ https://portfolio-site-lac-three.vercel.app/
 
 - Next.js : 13.4.4
 - React : 18.2.0
-- Sass : ^1.63.6
-- Typescript : 5.0.4
 - Typescript : 5.0.4
 - tailwindcss : ^3.3.2
 
